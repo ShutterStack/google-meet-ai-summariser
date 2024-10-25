@@ -1,0 +1,28 @@
+<!-- src/popup/popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Meet Notes</title>
+    <link rel="stylesheet" href="popup.css">
+<script defer src="popup.bundle.js"></script></head>
+<body>
+    <div class="popup-container">
+        <h1>Smart Meet Notes</h1>
+        <button id="startCapture" class="control-button">Start Capturing</button>
+        <button id="stopCapture" class="control-button">Stop Capturing</button>
+        
+        <div class="notes-section">
+            <h2>Captured Notes</h2>
+            <div id="notesContainer" class="notes-container">
+                <!-- Notes will be dynamically added here -->
+            </div>
+        </div>
+        
+        <button id="clearNotes" class="control-button clear-button">Clear Notes</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
